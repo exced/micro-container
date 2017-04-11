@@ -41,7 +41,7 @@ func child() {
 	cmd.Stdout = os.Stdout
 
 	must(syscall.Chroot("/home/rootfs"))
-	must(syscall.Chdir("/"))
+	must(os.Chdir("/"))
 	must(syscall.Mount("proc", "proc", "proc", 0, ""))
 	must(cmd.Run())
 }
