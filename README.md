@@ -1,6 +1,8 @@
 # Creating a simple container from scratch
 
-The container only works on Linux.
+Linux only.
+
+From Liz Rice Golang UK conf.
 
 ### Run command in container
 ```bash
